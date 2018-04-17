@@ -4,34 +4,68 @@
 <!--[if IE 8]><html class="preIE9"><![endif]-->
 <!--[if gte IE 9]><!--><html><!--<![endif]-->
   <head>
+
+    <!-- Meta Tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>title</title>
     <meta name="author" content="name">
     <meta name="description" content="description here">
     <meta name="keywords" content="keywords,here">
+    <!-- My Style Sheet -->
     <link rel="stylesheet" href="styles.css" type="text/css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   </head>
   <body>
     <div class="container">
-        <header class="marquee-container darken-bg">
+        <header class="marquee-container darken-bg clearfix">
             <div class="marquee">
                 <img src="images/title.gif" alt="welcome to my website" class="header-gif">
             </div>
         </header>
         <section class="main clearfix darken-bg">
-            <img src="images/profile.gif" alt="profile image">
-            <div class="bio-container">
-                <img src="images/nick_moignard.gif" alt="Nick Moignard" class="title-gif">
-                <p>Full stack Web and iOS dev seeking a full time position in Melbourne based tech company. I am a knowledgeable developer with a wide skill-set, including a broad knowledge of various programming languages, excellent communication and teamwork skills from my time as a producer at a film production company. Understanding client requirements and communicating the progress of projects are some core values I have gained from my freelancing business.</p>
+            <img src="images/nick_moignard.gif" alt="Nick Moignard" class="title-gif center-img">
+            
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-7">
+                    <p id="bio">Full stack Web and iOS dev seeking a full time position in Melbourne based tech company. I am a knowledgeable developer with a wide skill-set, including a broad knowledge of various programming languages, excellent communication and teamwork skills from my time as a producer at a film production company. Understanding client requirements and communicating the progress of projects are some core values I have gained from my freelancing business.</p>
+                </div>
+                <div class="col-sm-3">
+                    <img src="images/profile.gif" alt="profile image" class="center-img">
+                </div>
+                <div class="col-sm-1"></div>
             </div>
+
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10">
+                    <img src="images/dev-skills.gif" alt="Ruby on Rails, iOS Development, Javascript, Python" id="dev-skills">
+                </div>
+                <div class="col-sm-1"></div>
         </section>
+        <footer>
+            <div class="row darken-bg foot">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10">
+                    <img src="images/nick_moignard.gif" alt="" class="center-img">
+                </div>
+                <div class="col-sm-1"></div>
+            </div>   
+
+        </footer>
     
     </div>
 
 
+    <!-- Javascript -->
 
-    <script src="app.js" type="text/javascript"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="app.js"></script>
   </body>
 </html>
